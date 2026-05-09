@@ -1,0 +1,76 @@
+{
+  "brand": {
+    "name": "Supermercado Indio",
+    "subtitle": "Marca, lojas, recrutamento e presenca regional em evolucao."
+  },
+  "focus_cities": [
+    "Guaiba",
+    "Eldorado do Sul",
+    "Sao Jeronimo",
+    "Arroio dos Ratos",
+    "Charqueadas",
+    "Tapes",
+    "Canoas",
+    "Porto Alegre"
+  ],
+  "role_options": [
+    { "key": "gerente_loja", "label": "Gerente de Loja", "group": "leadership" },
+    { "key": "subgerente_loja", "label": "Subgerente", "group": "leadership" },
+    { "key": "encarregado_loja", "label": "Encarregado de Loja", "group": "leadership" },
+    { "key": "repositor", "label": "Repositor", "group": "operational" },
+    { "key": "caixa_operadora", "label": "Caixa Operadora", "group": "operational" },
+    { "key": "fiscal_caixa", "label": "Fiscal de Caixa", "group": "operational" },
+    { "key": "padeiro", "label": "Padeiro", "group": "operational" },
+    { "key": "auxiliar_padeiro", "label": "Auxiliar de Padeiro", "group": "operational" },
+    { "key": "confeiteiro", "label": "Confeiteiro", "group": "operational" },
+    { "key": "auxiliar_confeitaria", "label": "Auxiliar de Confeitaria", "group": "operational" },
+    { "key": "servicos_gerais", "label": "Servicos Gerais", "group": "operational" },
+    { "key": "administrativo", "label": "Administrativo", "group": "general" },
+    { "key": "marketing_junior", "label": "Marketing Junior", "group": "general" },
+    { "key": "marketing_pleno", "label": "Marketing Pleno", "group": "general" },
+    { "key": "pricing", "label": "Pricing", "group": "general" },
+    { "key": "financeiro", "label": "Financeiro", "group": "general" }
+  ],
+  "stats": {
+    "city_count": 8,
+    "role_count": 16,
+    "digital_fronts": 3
+  },
+  "contact": {
+    "rh_email": "rh@supermercadoindio.com.br",
+    "commercial_email": "comercial@supermercadoindio.com.br",
+    "rh_whatsapp": "(51) 0000-0000"
+  },
+  "vacancies": [
+    {
+      "vacancy_id": "vaga-gerente-loja-guaiba",
+      "title": "Gerente de Loja",
+      "city": "Guaiba",
+      "store_name": "Rede Regional",
+      "employment_type": "CLT",
+      "status": "active",
+      "summary": "Liderar operacao de loja, indicadores, equipe e execucao comercial da unidade.",
+      "updated_at": "2026-04-29T21:20:00-03:00"
+    },
+    {
+      "vacancy_id": "vaga-repositor-charqueadas",
+      "title": "Repositor",
+      "city": "Charqueadas",
+      "store_name": "Rede Regional",
+      "employment_type": "CLT",
+      "status": "active",
+      "summary": "Atuar em abastecimento, organizacao de gondola, ruptura e rotina operacional de loja.",
+      "updated_at": "2026-04-29T21:20:00-03:00"
+    },
+    {
+      "vacancy_id": "vaga-pricing-porto-alegre",
+      "title": "Pricing",
+      "city": "Porto Alegre",
+      "store_name": "Rede Regional",
+      "employment_type": "CLT",
+      "status": "active",
+      "summary": "Analisar precificacao, margem, competitividade e leitura comercial da rede.",
+      "updated_at": "2026-04-29T21:20:00-03:00"
+    }
+  ]
+}

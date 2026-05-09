@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermercado Indio | Plataforma de Marca e Talentos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-lockup">
+      <img class="brand-logo" src="./assets/logo.png" alt="Logotipo Supermercados Indio">
+      <div>
+        <p class="eyebrow">Rede regional em expansão</p>
+        <h1>Supermercado Indio</h1>
+        <p class="brand-subtitle">Cadastro de talentos, vagas abertas e presenca forte nas cidades da regiao.</p>
+      </div>
+    </div>
+
+    <div class="topbar-meta">
+      <div class="mini-stat">
+        <strong id="statCities">7</strong>
+        <span>Cidades foco</span>
+      </div>
+      <div class="mini-stat">
+        <strong id="statRoles">16</strong>
+        <span>Cargos-base</span>
+      </div>
+      <div class="mini-stat">
+        <strong id="statFronts">3</strong>
+        <span>Frentes digitais</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-main">
+        <div class="hero-headline">
+          <div>
+            <p class="eyebrow">Trabalhe conosco | rede em crescimento</p>
+            <h2>Venha fazer parte de uma rede regional forte, organizada e em expansão.</h2>
+          </div>
+        </div>
+        <p class="hero-text">
+          Esta pagina foi organizada para apresentar a rede, divulgar vagas abertas e receber curriculos com mais
+          clareza, rapidez e confianca. O objetivo e conectar pessoas boas a uma operacao regional solida, com
+          espaco para crescimento, desenvolvimento e entrada no fluxo real do RH.
+        </p>
+        <p id="siteNotice" class="ui-notice" hidden></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#formulario">Fazer cadastro agora</a>
+          <a class="btn btn-secondary" href="#vagas-abertas">Ver vagas abertas</a>
+        </div>
+        <div class="hero-strip">
+          <article class="hero-strip-card">
+            <span>Vagas ativas</span>
+            <strong id="heroVacancyCount">3</strong>
+            <p>Oportunidades publicadas pelo RH da rede.</p>
+          </article>
+          <article class="hero-strip-card">
+            <span>Cadastro simples</span>
+            <strong>2 min</strong>
+            <p>Formulario direto para curriculos e interesse profissional.</p>
+          </article>
+          <article class="hero-strip-card">
+            <span>Canal de retorno</span>
+            <strong>RH</strong>
+            <p>Os contatos entram na fila da equipe responsavel pela triagem.</p>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <article class="brand-art-card campaign-poster-card">
+          <img src="./assets/post-equipe-vagas.png" alt="Arte de campanha para cadastro de curriculos no Supermercado Indio">
+          <div class="poster-caption">
+            <span class="card-label">Campanha de captacao</span>
+            <strong>Pagina pronta para divulgar vagas, QR Code e cadastro de curriculos.</strong>
+            <p>Use esta entrada em WhatsApp, redes sociais, divulgacao local e campanhas do RH para centralizar o envio dos candidatos.</p>
+          </div>
+        </article>
+        <article class="glass-card accent-gold">
+          <span class="card-label">Foco de captacao</span>
+          <strong>Entrada clara para a familia Indio</strong>
+          <p>O candidato precisa entender a proposta, confiar na rede e entrar no formulario com a sensacao de estrutura e seriedade.</p>
+        </article>
+        <article class="glass-card accent-green">
+          <span class="card-label">Foco de RH</span>
+          <strong>Captacao regional padronizada</strong>
+          <p>A mesma pagina serve como frente publica de vagas, cadastro de talentos e apoio as campanhas e necessidades da equipe de RH.</p>
+        </article>
+      </aside>
+    </section>
+
+    <section class="filter-bar">
+      <div class="filter-title">
+        <span>Exploracao rapida</span>
+      </div>
+      <div class="filter-pills">
+        <button class="pill active" data-filter="todos">Todos</button>
+        <button class="pill" data-filter="lideranca">Lideranca</button>
+        <button class="pill" data-filter="operacional">Operacional</button>
+        <button class="pill" data-filter="administrativo">Administrativo</button>
+      </div>
+      <label class="search-wrap">
+        <span>Buscar cargo</span>
+        <input id="careerSearchInput" type="search" placeholder="gerente, caixa, pricing">
+      </label>
+    </section>
+
+    <section class="section-block" id="rede">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Eixos da pagina</p>
+          <h3>Tres mensagens que a pagina precisa sustentar para vender melhor a marca e contratar melhor.</h3>
+        </div>
+      </div>
+      <div class="signal-grid">
+        <article class="signal-card">
+          <span class="signal-index">01</span>
+          <h4>Rede confiavel</h4>
+          <p>O cliente precisa olhar e perceber organizacao, escala regional e consistencia de operacao.</p>
+        </article>
+        <article class="signal-card">
+          <span class="signal-index">02</span>
+          <h4>Empresa que contrata bem</h4>
+          <p>O candidato precisa sentir que a rede tem processo, estabilidade, criterio e espaco real para crescer.</p>
+        </article>
+        <article class="signal-card">
+          <span class="signal-index">03</span>
+          <h4>Presenca local forte</h4>
+          <p>A rede precisa aparecer como marca viva nas cidades em que atua e pretende se consolidar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Diferenciais</p>
+          <h3>O digital precisa refletir os pilares reais da operacao.</h3>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card gold">
+          <h4>Percepcao de valor</h4>
+          <p>QUALIDADE E PREÇOS BAIXOS TODOS OS DIAS PARA VOCÊ</p>
+        </article>
+        <article class="feature-card green">
+          <h4>Proximidade regional</h4>
+          <p>Comunidade, presenca local e leitura das necessidades de cada cidade.</p>
+        </article>
+        <article class="feature-card blue">
+          <h4>Operacao forte</h4>
+          <p>Setores, equipe, rotina e execucao como elementos visiveis da marca.</p>
+        </article>
+        <article class="feature-card rose">
+          <h4>Talento e crescimento</h4>
+          <p>Recrutamento como parte central da expansão e da qualidade da rede.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block city-section" id="cidades">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Cobertura regional</p>
+          <h3>Cidades que precisam estar sempre conectadas ao site e ao funil de recrutamento.</h3>
+        </div>
+      </div>
+      <div id="cityGrid" class="city-grid"></div>
+    </section>
+
+    <section class="section-block stores-section" id="lojas">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Lojas e operacao</p>
+          <h3>Uma camada de lojas para dar mais substancia comercial e institucional para a rede.</h3>
+        </div>
+      </div>
+      <div id="storeGrid" class="store-grid"></div>
+    </section>
+
+    <section class="section-block promo-section" id="promocoes">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Campanhas e promocoes</p>
+          <h3>Blocos pensados para encarte, ofertas, categorias de imagem e comunicacao semanal.</h3>
+        </div>
+      </div>
+      <div id="promoGrid" class="promo-grid"></div>
+    </section>
+
+    <section class="section-block careers-section" id="vagas-abertas">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Vagas abertas</p>
+          <h3>Oportunidades publicadas pelo RH para acelerar a captacao regional da rede.</h3>
+        </div>
+      </div>
+      <div id="vacancyGrid" class="career-grid"></div>
+    </section>
+
+    <section class="section-block careers-section" id="carreiras">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Trabalhe conosco</p>
+          <h3>Cargos organizados para comunicar melhor a oportunidade da rede.</h3>
+        </div>
+      </div>
+      <div id="careerGrid" class="career-grid"></div>
+    </section>
+
+    <section class="section-block rh-flow-section" id="rh">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Integracao com RH</p>
+          <h3>O site e o painel precisam trabalhar como um unico fluxo de captacao.</h3>
+        </div>
+      </div>
+      <div class="rh-flow-grid">
+        <article class="flow-card">
+          <span class="signal-index">01</span>
+          <h4>Escolha do cargo</h4>
+          <p>O RH seleciona no painel cargos como gerente de loja, repositor, caixa, pricing e financeiro.</p>
+        </article>
+        <article class="flow-card">
+          <span class="signal-index">02</span>
+          <h4>Busca regional</h4>
+          <p>A automacao varre LinkedIn Pessoas, FGTAS/SINE, Indeed, Infojobs, Gupy e canais de captacao da regiao.</p>
+        </article>
+        <article class="flow-card">
+          <span class="signal-index">03</span>
+          <h4>Landing + candidatura</h4>
+          <p>O candidato chega na pagina, entende a rede, enxerga as vagas e envia o contato com mais confianca.</p>
+        </article>
+      </div>
+      <div class="rh-links">
+        <a class="btn btn-primary" href="/">Abrir painel do RH</a>
+        <a class="btn btn-secondary" href="#formulario">Ir para formulario</a>
+      </div>
+    </section>
+
+    <section class="section-block prompt-section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Uso estrategico</p>
+          <h3>Essa base pode virar home institucional, pagina de recrutamento e landing page por cidade.</h3>
+        </div>
+      </div>
+      <div class="prompt-box">
+        <div class="prompt-copy">
+          <strong>Direcao recomendada</strong>
+          <p>
+            O proximo nivel e integrar esta pagina ao painel de recrutamento, puxando cargos, cidades e chamadas
+            do RH automaticamente. Assim a marca e o processo de contratacao passam a trabalhar juntos.
+          </p>
+        </div>
+        <div class="prompt-actions">
+          <a class="btn btn-primary" href="#contato">Ativar RH</a>
+          <a class="btn btn-secondary" href="#rede">Rever proposta</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block form-section" id="formulario">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Cadastro de interessados</p>
+          <h3>Canal publico para curriculos, interesse comercial e contato institucional da rede.</h3>
+        </div>
+      </div>
+      <div class="form-shell">
+        <form class="lead-form" id="leadForm">
+          <div class="field-grid">
+            <label>
+              Nome completo
+              <input type="text" name="nome" placeholder="Seu nome" required>
+            </label>
+            <label>
+              Cidade
+              <select name="cidade" id="citySelect" required></select>
+            </label>
+          </div>
+          <div class="field-grid">
+            <label>
+              WhatsApp
+              <input type="text" name="whatsapp" placeholder="(51) 99999-9999">
+            </label>
+            <label>
+              E-mail
+              <input type="email" name="email" placeholder="voce@email.com">
+            </label>
+          </div>
+          <div class="field-grid">
+            <label>
+              Interesse principal
+              <select name="interesse" required>
+                <option value="vaga">Quero trabalhar na rede</option>
+                <option value="fornecedor">Sou fornecedor / parceiro</option>
+                <option value="institucional">Contato institucional</option>
+              </select>
+            </label>
+            <label>
+              Cargo de interesse
+              <select name="cargo" id="careerSelect"></select>
+            </label>
+          </div>
+          <label>
+            Mensagem
+            <textarea name="mensagem" rows="5" placeholder="Conte um pouco sobre seu interesse ou perfil."></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Enviar interesse</button>
+            <span id="formFeedback" class="form-feedback">Formulario conectado ao RH para captacao inicial e organizacao da fila de candidatos.</span>
+          </div>
+        </form>
+
+        <aside class="form-side">
+          <article class="glass-card accent-blue">
+            <span class="card-label">Uso pratico</span>
+            <strong>Base para trabalhe conosco</strong>
+            <p>Este formulario ja funciona como base da frente publica de curriculos e interesse profissional da rede.</p>
+          </article>
+          <article class="glass-card accent-green">
+            <span class="card-label">Fluxo do RH</span>
+            <strong>Contato ja vai para triagem</strong>
+            <p>Os envios entram na fila local do RH e podem ser organizados por cargo, cidade, prioridade e interesse.</p>
+          </article>
+          <article class="glass-card accent-gold">
+            <span class="card-label">Retorno esperado</span>
+            <strong>Mais agilidade e menos ruido</strong>
+            <p>O objetivo e reduzir perda de candidato bom, acelerar triagem e dar mais seriedade ao processo de contratacao.</p>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-block contact-section" id="contato">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Contato base</p>
+          <h3>Estrutura recomendada para relacionamento com candidatos e parceiros.</h3>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <article class="contact-card">
+          <span>RH e curriculos</span>
+          <strong>rh@supermercadoindio.com.br</strong>
+          <p>Canal principal para cadastro de curriculos e retorno a candidatos.</p>
+        </article>
+        <article class="contact-card">
+          <span>Comercial</span>
+          <strong>comercial@supermercadoindio.com.br</strong>
+          <p>Contato institucional para fornecedores, parceiros e relacoes comerciais.</p>
+        </article>
+        <article class="contact-card">
+          <span>WhatsApp do RH</span>
+          <strong>(51) 0000-0000</strong>
+          <p>Canal rapido para retorno operacional e contato local de vagas.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Supermercado Indio | Plataforma de marca, vagas e captacao regional</span>
+    <span>Maio 2026</span>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
+   
